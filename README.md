@@ -1,2 +1,2 @@
 # aski
- Aski için angular ionic tabanlı geliştirdiim mobil uygulama
+ ASKİ mobile app by ionic angular for Ankara Su ve Kanalizasyon İşleri (ASKİ) 
