@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons >
+      <ion-back-button text="Geri"  defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Su Kesintileri</ion-title>
+  </ion-toolbar>
+ </ion-header>
+
+
+
+ <ion-content [fullscreen]="true">
+
+<ion-list >
+    <ion-item  *ngFor="let user of users2" color="light">
+      <div color="dark">
+        <h2> {{user.A_TARIH}}</h2>
+         {{user.DETAY}}
+        <h2>- Etkilenen Yerler -</h2>
+        {{user.ETKILENENLER}}
+        
+        <h2>{{user.T_TARIH}}</h2>
+      </div>
+       
+    </ion-item>
+</ion-list>
+ 
+ </ion-content>

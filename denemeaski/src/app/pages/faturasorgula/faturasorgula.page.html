@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons >
+      <ion-back-button text="Geri"  defaultHref="/home" ></ion-back-button>
+    </ion-buttons>
+    <ion-title>Fatura Sorgula</ion-title>
+  </ion-toolbar>
+ </ion-header>
+
+
+ <ion-content>
+ 
+  <ion-item>
+    <ion-label position="floating" color="primary">Abone Numarası</ion-label>
+    <ion-input [(ngModel)]="user.abone_no" ></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="floating" color="primary">Soyad</ion-label>
+    <ion-input [(ngModel)]="user.soyad" ></ion-input>
+  </ion-item>
+<ion-list>
+
+  <ion-toolbar>
+    <ion-button (click)="BorcGetir()" >Güncel borç</ion-button>
+   </ion-toolbar>
+ 
+
+
+  <ion-item  *ngFor="let user of users" >
+    <ion-label>
+      <p>Son ödeme tarihi</p>
+      {{user.SON_OD_T}}
+      <p>ödenecek tutar</p>
+      {{user.SON_TOPLAM}}
+      <p>Durumu</p>
+      {{user.DURUMU}}
+    </ion-label>
+   
+  </ion-item>
+
+</ion-list>
+ 
+</ion-content>
+
+
+  
+ 

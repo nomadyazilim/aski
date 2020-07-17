@@ -1,0 +1,53 @@
+<ion-header color="" >
+  <ion-toolbar color="primary">
+    <img  src="../../../assets/icon/ASKİAPPlogo.png" />
+  </ion-toolbar>
+</ion-header>
+<ion-header >
+  
+  <ion-item color="primary" *ngFor="let user of users">
+   
+     
+     Sıcaklık     :     {{user.tmp}}
+     
+     Yağış     :     {{user.yagis}}
+     
+     Nem     :     {{user.nem}}
+  
+     
+  </ion-item>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="primary">
+ 
+ 
+
+ 
+ 
+      <ion-button  color="light" class="faturasol"  (click)="nextpageFatura()"> 
+           <img  src="../../../assets/icon/fatura.jpeg" />
+      </ion-button>
+
+      <ion-button color="light" class="faturasag"  (click)="nextpageSukesintileri()">
+        <img  src="../../../assets/icon/suKesintisiLogo.jpeg" />
+      </ion-button>
+      
+      <ion-button   color="light" class="faturasol" (click)="nextpageHaberler()">
+        <img  src="../../../assets/icon/haberLogo.jpeg" />
+      </ion-button>
+
+      <ion-button   color="success" class="faturasag"  href="http://www.aski.gov.tr/TR/Anasayfa">
+        <img  src="../../../assets/icon/onlineislemler.jpeg" />
+      </ion-button>
+     
+      <ion-button   color="light" class="faturasol" (click)="islem()" >
+        <img  src="../../../assets/icon/islemmerkezleri.jpeg" />
+      </ion-button>
+      
+      <ion-button   color="light" class="faturasag" (click)="nextpageIletisim()">
+        <img  src="../../../assets/icon/iletisimLogo.jpeg" />
+      </ion-button>
+
+
+   
+</ion-content>

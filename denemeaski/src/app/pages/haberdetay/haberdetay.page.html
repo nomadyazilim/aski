@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons >
+      <ion-back-button text="Geri"  defaultHref="/haberler"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Haber Detayı</ion-title>
+  </ion-toolbar>
+ </ion-header>
+
+<ion-content>
+ 
+   
+  <ion-item *ngFor="let user of haber" class="baslik" >
+   <h3 color="danger">{{user.baslik}}</h3> 
+   
+   </ion-item>
+  <ion-item *ngFor="let user of haber" >
+   
+   <h [innerHTML]="user.metin"></h>
+   </ion-item>
+   
+  
+
+  
+</ion-content>
